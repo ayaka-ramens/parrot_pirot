@@ -1,6 +1,6 @@
 <template>
   <div>
-  <h1>Ramen</h1>
+  SecurityCheck
   </div>
 </template>
 
