@@ -11,7 +11,6 @@ export default new Vuex.Store({
         name: 'TaiwanTaoyuan',
         country: 'Taiwan',
         airLine: 'EVA',
-        Departures: 'A',
         boardingGate: 100,
         emoji: '🇹🇼'
       },
@@ -19,32 +18,28 @@ export default new Vuex.Store({
         name: 'Heathrow',
         country: 'UK',
         airLine: 'British Airways',
-        Departures: 'A',
-        boardingGate: 100,
+        boardingGate: 248,
         emoji: '🇬🇧'
       },
       {
         name: 'Frankfurt',
         country: 'Germany',
         airLine: 'Lufthansa',
-        Departures: 'A',
-        boardingGate: 100,
+        boardingGate: 286,
         emoji: '🇩🇪'
       },
       {
         name: 'Suvarnabhumi',
         country: 'Thai',
         airLine: 'Thai Airways',
-        Departures: 'A',
-        boardingGate: 100,
+        boardingGate: 135,
         emoji: '🇹🇭'
       },
       {
         name: 'Helsinki-Vantaa',
         country: 'Finland',
         airLine: 'Finnair',
-        Departures: 'A',
-        boardingGate: 100,
+        boardingGate: 265,
         emoji: '🇫🇮'
       }
     ]
