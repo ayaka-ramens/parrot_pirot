@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <h1 class="logo">ParrotPirot</h1>
+    <h1>ParrotPirot</h1>
     <Start/>
   </div>
 </template>
@@ -26,7 +26,7 @@ body {
     sans-serif;
 }
 
-.logo {
+h1, h2 {
   font-family: "Courier"
 }
 </style>

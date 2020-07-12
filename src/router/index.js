@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '@/views/Home.vue'
-import Departures from '@/components/Departures'
+import Departure from '@/components/Departure'
 import CheckIn from '@/components/CheckIn'
 import SecurityCheck from '@/components/SecurityCheck'
 import Immigration from '@/components/Immigration'
@@ -17,9 +17,9 @@ const routes = [
     component: Home
   },
   {
-    path: '/departures',
-    name: 'Departures',
-    component: Departures
+    path: '/departure',
+    name: 'Departure',
+    component: Departure
   },
   {
     path: '/check-in',

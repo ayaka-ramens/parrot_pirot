@@ -27,7 +27,7 @@ export default {
   methods: {
     citySelectSubmit: function () {
       this.$store.commit('setCity', this.selectCity)
-      this.$router.push('/departures')
+      this.$router.push('/departure')
     }
   }
 }
