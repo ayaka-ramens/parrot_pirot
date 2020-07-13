@@ -24,9 +24,36 @@ body {
     "Hiragino Sans",
     Meiryo,
     sans-serif;
+  margin: 10px 50px;
 }
 
 h1, h2 {
   font-family: "Courier"
+}
+
+.fade {
+  animation-name: fadeIn;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  90% {
+  opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.main-image {
+  width: 600px;
+}
+
+.illust {
+  width: 200px;
 }
 </style>
