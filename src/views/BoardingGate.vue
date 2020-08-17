@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <h2>BoardingGate</h2>
+  <div class="fade-in">
+    <h1>BoardingGate</h1>
     <p>日本食に別れを告げましょう</p>
     <hooper class="hooper-slide" :settings="hooperSettings">
       <slide><img src="../assets/food1.jpeg" class="food-image"></slide>

@@ -1,11 +1,9 @@
 <template>
-  <div>
-      <h2>OnBoard</h2>
-    <div class="fade">
-      <p>ようやく機内に着きました、動画でも見て旅を想像しましょう</p>
-      <searchYoutube/>
-      <button @click="$router.push('/')">Homeに戻る</button>
-    </div>
+  <div class="fade-in">
+    <h1>OnBoard</h1>
+    <p>ようやく機内に着きました、動画でも見て旅を想像しましょう</p>
+    <searchYoutube/>
+    <button @click="$router.push('/')">Homeに戻る</button>
   </div>
 </template>
 

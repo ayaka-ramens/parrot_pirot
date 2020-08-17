@@ -1,27 +1,25 @@
 <template>
-  <div>
-    <h2>CheckIn</h2>
-    <div class="fade">
-      <p>チェックイン・荷物を預けます</p>
-      <button  v-if="!fade" @click="weighBaggege">荷物を預ける</button>
-      <transition name="fade">
-        <div v-if="fade">
-          <p>
-            <img src="../assets/suitcase.png" class="illust">
-            <img src="../assets/backpack.png" class="illust">
-          </p>
-          <div class="weighing-scale">
-            <div class="weigh">{{ weigh1 }}kg</div>
-            <div class="weigh">{{ weigh2 }}kg</div>
-          </div>
+  <div class="fade-in">
+    <h1>CheckIn</h1>
+    <p>チェックイン・荷物を預けます</p>
+    <button  v-if="!fade" @click="weighBaggege">荷物を預ける</button>
+    <transition name="fade">
+      <div v-if="fade">
+        <p>
+          <img src="../assets/suitcase.png" class="illust">
+          <img src="../assets/backpack.png" class="illust">
+        </p>
+        <div class="weighing-scale">
+          <div class="weigh">{{ weigh1 }}kg</div>
+          <div class="weigh">{{ weigh2 }}kg</div>
         </div>
-      </transition>
-      <br>
-      <template v-if="baggeageCheck">
-        <p>荷物を預けました！</p>
-        <button @click="goToImmigration">出国審査へ行く</button>
-      </template>
-    </div>
+      </div>
+    </transition>
+    <br>
+    <template v-if="baggeageCheck">
+      <p>荷物を預けました！</p>
+      <button @click="goToImmigration">出国審査へ行く</button>
+    </template>
   </div>
 </template>
 

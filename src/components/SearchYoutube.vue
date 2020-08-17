@@ -1,16 +1,11 @@
 <template>
   <div class="searchYoutube">
-    <input v-model="keyword" placeholder="検索キーワードを入力">
+    <input type="text" v-model="keyword" placeholder="検索キーワードを入力">
     <button @click="searchMovies">検索</button>
-
-    <table v-show="results">
-      <tr>
-        <th>movie</th>
-        <th>description</th>
-      </tr>
+    <table v-show="results" class="youtube-list">
       <tr v-for="movie in results" :key="movie.id.videoId">
         <td>
-          <a :href="'https://www.youtube.com/watch?v=' + movie.id.videoId">
+          <a :href="'https://www.youtube.com/watch?v=' + movie.id.videoId" target=”_blank”>
             <img width="320" height="180" :src="movie.snippet.thumbnails.medium.url">
           </a>
         </td>
@@ -71,5 +66,14 @@ export default {
 </script>
 
 <style scoped>
-
+.youtube-list {
+  background-color: #f5f5f5;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 15px 0;
+}
+.youtube-list td {
+  text-align: left;
+  padding: 12px 15px;
+}
 </style>
