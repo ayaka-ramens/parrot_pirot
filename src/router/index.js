@@ -1,11 +1,11 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '@/views/Home.vue'
-import Departure from '@/components/Departure'
-import CheckIn from '@/components/CheckIn'
-import Immigration from '@/components/Immigration'
-import BoardingGate from '@/components/BoardingGate'
-import OnBoard from '@/components/OnBoard'
+import Departure from '@/views/Departure'
+import CheckIn from '@/views/CheckIn'
+import Immigration from '@/views/Immigration'
+import BoardingGate from '@/views/BoardingGate'
+import OnBoard from '@/views/OnBoard'
 
 Vue.use(VueRouter)
 
